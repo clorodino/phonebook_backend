@@ -28,6 +28,8 @@ let persons = [
   },
 ];
 
+app.use(express.static("dist"));
+
 app.use(
   morgan(":method :url :status :response-time ms - :res[content-length]")
 );
